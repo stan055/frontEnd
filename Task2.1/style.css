@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap);
+
+html,
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(131, 131, 131);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button implement dialog */
+
+.btn-dialog:focus,
+.btn-dialog {
+    font-size: xx-large;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 16px;
+    background-color: lightgrey;
+    outline: none; 
+}
+
+/* /Button implement dialog */
+
+/* Dialog */
+
+#dialog {
+    display: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #444;
+}
+
+/* Titlebar */
+
+.ui-dialog-titlebar {
+    border-radius: 5px;
+}
+
+.ui-widget-header {
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #f7b64a;
+    border: 1px double darkorange;
+}
+
+.ui-widget-header::before {
+    content: '';
+	position: absolute;
+	top: calc(60%);
+	left: 0px;
+	width: calc(100%);
+    height: 40%;
+    background: linear-gradient(0deg, rgba(246,174,55,.1)  0%, rgba(246,175,58,.6) 100%);
+}
+
+.ui-dialog-title {
+    position: relative; 
+    color: white;
+}
+
+.ui-dialog-titlebar-close:hover,
+.ui-dialog-titlebar-close {
+    border: none;
+    background-color: transparent;
+}
+
+/* Content */
+
+.ui-widget-content {
+    background-color: #ddd;
+    border: 1px solid #bbb;
+}
+
+/* Buttons */
+
+.ui-button .ui-icon:hover,
+.ui-button .ui-icon {
+    background-image: url(https://iliadasuites.com/wp-content/themes/iliada/js/js/jquery-ui-1.12.1.custom/images/ui-icons_ffffff_256x240.png);
+}
+
+.btn-yes:focus,
+.btn-yes:hover ,
+.btn-yes {
+    padding: .45em  .7em !important;
+    font-weight: 600;
+    position: relative;
+	display: inline-block;
+    color: transparent;
+    border: 1px double #fbcb09;
+    background-color: #fdf9e1;
+    border-radius: 5px;
+    outline: none; 
+
+}
+
+.btn-yes:focus::before,
+.btn-yes:hover::before,
+.btn-yes::before{
+	content: '';
+	position: absolute;
+	top: calc(50% - 2px);
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(#fdf5cf, #fefaea);
+}
+
+.btn-yes:focus::after,
+.btn-yes:hover::after,
+.btn-yes::after{
+    color: #e0a205;
+	content: 'Yes';
+	position: absolute;
+	top: 7px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 100%;
+}
+
+.btn-no:hover,
+.btn-no:focus,
+.btn-no {
+    padding: .45em  .7em !important;
+    color: #48b5d5;
+    font-weight: bold;
+    border: 1px double #aaa;
+    border-radius: 5px;
+    background-color: #eee;
+    outline: none; 
+}

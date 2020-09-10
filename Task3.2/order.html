@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike shop order</title>
+    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/order.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body id="body">
+    <div>
+        <header class="header">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+            <h3>Best bike shop in the world</h3>
+        </header>
+    </div>
+    <div class="general-rows">
+        <div>
+            <nav page="4">
+                <script src="js/menu.js"></script>
+            </nav>
+        </div>
+        <div>
+            <main>
+                 <!-- Choose model block -->
+                    <div class="container" id="coose-block">
+                        <div class="header">
+                            <h2>Choose model of bike</h2>
+                        </div>
+                        <form class="form" >
+                            <div class="form-control" >
+                                <label>MODELS</label>
+                                <select id = "sel-models" class="input" value='' validate='isNotEmpty'>
+                                    <option value="" selected disabled hidden>Choose here</option>
+                                </select>
+                                <small></small>
+                                <br>
+                                <br>        
+                                <textarea class="input" id="area-models" rows="8" cols="43">
+                                </textarea>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Billing address block -->
+                    <div class="container" id="billingAddress">
+                        <div class="header">
+                            <h2>Billing address</h2>
+                        </div>
+                
+                        <form class="form" >
+                            <div class="form-control">
+                                <label>FIRST NAME</label>
+                                <input type="text" name="firstName" class="item check" validate="isNotEmpty">
+                                <small></small>
+                            </div>
+                            <div class="form-control">
+                                <label>LAST NAME</label>
+                                <input type="text" name="lastName" class="item check" validate="isNotEmpty">
+                                <small></small>
+                            </div>
+                            <div class="form-control">
+                                <label>STREET ADDRESS</label>
+                                <input type="text" name="streetAddress" class="item check" validate="isNotEmpty">
+                                <small></small>
+                            </div>
+                            <div class="form-control">
+                                <label>STATE</label>
+                                <select name="state" class="check input item" value='' validate='isNotEmpty'>
+                                <option value="" selected disabled hidden>Choose here</option>
+                                </select>
+                                <small></small>
+                            </div>
+                            <div class="form-control">
+                                <label>ZIP CODE</label>
+                                <input type="number" class="zip check" onKeyPress="if(this.value.length==5) return false;" 
+                                    placeholder="35746" valLen="5" valMax="99999" error="Invalid zip code" validate="withLengthValueString" />
+                                <small></small>
+                            </div>
+                            <div class="form-control">
+                                <label>PHONE</label>
+                                <input type="tel" class="phone check" placeholder="+380931234567" onKeyPress="if(this.value.length==13) return false;"  
+                                    validate="phone">
+                                <small></small>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Delivery address -->
+                    <div class="container" id="deliveryAddress">
+                        <div class="header">
+                            <h2>Delivery address</h2>
+                        </div>
+                
+                        <form class="form" >
+                        </form>
+                    </div>
+
+                    <!-- Delivery date -->
+                    <div class="container" id="delivery-date">
+                        <div class="header">
+                            <h2>Delivery Date</h2>
+                        </div>
+                    
+                        <form class="form" >
+                            <div class="date-picker form-control">
+                                <h3 class="selected-date"></h3>
+                                <div>
+                                    <label>DAY</label>
+                                    <select  class="days" validate="isNotEmpty"></select>
+                                    <small></small>
+                                </div>
+                                <div>
+                                    <label>MONTH</label>
+                                    <select  class="months" validate="isNotEmpty"></select>
+                                    <small></small>    
+                                </div>
+                                <div>
+                                    <label>YEAR</label>
+                                    <select  class="years" validate="isNotEmpty"></select>
+                                    <small></small>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Payment -->
+                    <div class="container" id="payment">
+                        <div class="header">
+                            <h2>Payment</h2>
+                        </div>
+                    
+                        <form class="form" >
+                            <div class="form-control">
+                                <label>CHOOSE CREDIT CARD</label>
+                                <select class="credit-card input" value='' validate='isNotEmpty'>
+                                    <option value="" selected disabled hidden>Choose here</option>
+                                </select>
+                                <small></small>
+                            </div>
+                            
+                            <div class="form-control">
+                                <label>CARD NUMBER</label>
+                                <input class="item" type="number" onKeyPress="if(this.value.length==15) return false;" 
+                                    valLen="15" valMax="999999999999999" error="Invalid credit card"
+                                    validate="withLengthValueString">
+                                <small></small>
+                            </div>
+                            <div class="form-control">
+                            <div class="expiration">
+                                <label>EXPIRATION</label>
+                                    <input class="item left" type="number" onKeyPress="if(this.value.length==2) return false;" 
+                                        placeholder="MM" min="1" max="12" valLen="2" valMax="12" error="Error month"
+                                        validate="withLengthValueString"/>
+                                <span>/</span>
+                                    <input type="number" class="item right" type="number" onKeyPress="if(this.value.length==2) return false;" 
+                                        placeholder="YY" min="1" max="99" valLen="2" valMax="99" error="Error year" 
+                                        validate="withLengthValueString" />
+                                <small></small>           
+                            </div>
+                            </div>
+                            
+                            <div class="form-control">
+                            <span class="cvv">
+                                <label>CVV</label>
+                                <input class="item" type="number" onKeyPress="if(this.value.length==3) return false;"
+                                valLen="3" valMax="999" error="Invalid cvv" validate="withLengthValueString" >
+                                <small></small>
+                            </span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Create account -->
+                    <div class="container" id="create-account">
+                        <div class="header">
+                            <h2>Create account?</h2>
+                        </div>
+                    
+                        <form class="form" >
+                            <div class="form-control">
+                                <label>USERNAME</label>
+                                <input type="text" placeholder="username" name="userName" validate="isNotEmpty">
+                                <small></small>
+                            </div>
+                            <div class="form-control">
+                                <label>PASSWORD</label>
+                                <input type="password" placeholder="password" name="password" validate="isNotEmpty">
+                                <small></small>
+                            </div>
+                            <div class="form-control">
+                                <label>CONFIRM PASSWORD</label>
+                                <input type="password" placeholder="password" name="confirmPassword" validate="confirmPassword">
+                                <small></small>
+                            </div>
+                        </form>
+                    </div>
+            
+            </main>
+
+            <button type="button" class="acept" onclick="allValidate()">
+                ACEPT
+            </button>
+
+        </div>
+        <div>
+            <aside>
+                <div class="box">
+
+                    <script src="js/autocomplete.js"></script>
+
+                    <script src="js/datepicker.js"></script>
+                    
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div>
+        <footer>Copyright © 2020 Stan Smith All Rights Reserved</footer>
+    </div>
+
+    <script src="js/orderForm/helper.js"></script>
+    <script src="js/orderForm/chooseModel.js"></script>
+    <script src="js/orderForm/billingAddress.js"></script>
+    <script src="js/orderForm/deliveryAddress.js"></script>
+    <script src="js/orderForm/payment.js"></script>
+    <script src="js/orderForm/createAccount.js"></script>
+    <script src="js/orderForm/deliveryDate.js"></script>
+</body>
+</html>

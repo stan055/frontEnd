@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <form class="form">
+        
+        <h2 class="zero-margin">One-Way Airlines: Let`s make a reservation</h2>
+        
+        <fieldset class="top-border">
+            <div class="ui-widget bottom-paddin">
+                <label class="left-width">Pick a departure date</label>
+                <input type="text" id="datepicker" class="ui-button ui-corner-all blue-orange-text input-width">
+            </div>
+            <div class="ui-widget bottom-paddin">
+                <label for="airport" class="left-width">Find an airport </label>
+                <input id="airport" class="ui-button ui-corner-all blue-orange-text input-width">
+            </div>
+            <div class="ui-widget bottom-paddin">
+                <label for="meal" class="left-width">Meal Options</label>
+                <select name="meal" id="meal">
+                  <option selected="selected">No meal</option>
+                  <option>Breakfast</option>
+                  <option>Breakfast and Dinner</option>
+                </select>
+            </div>            
+
+            <div class="ui-widget bottom-paddin row">
+                <div>
+                    <label class="left-width">Number of bags to check </label>
+                </div>
+                <div class="radio-box">
+                    <label for="radio-1" class="blue-orange-text">0</label>
+                    <input type="radio" name="radio-1" id="radio-1" checked>
+                    <label for="radio-2" class="blue-orange-text">1</label>
+                    <input type="radio" name="radio-1" id="radio-2">
+                    <label for="radio-3" class="blue-orange-text">2</label>
+                    <input type="radio" name="radio-1" id="radio-3">
+                </div>
+            </div>
+
+            <div class="ui-widget bottom-paddin  row">
+                <div>
+                    <label class="left-width">Type of seat you`d like </label>
+                </div>
+                <div class="control-group">
+                    <label for="checkbox-1" class="blue-orange-text">Aisle</label>
+                    <input type="checkbox" name="checkbox-1" id="checkbox-1" >
+                    <label for="checkbox-2" class="blue-orange-text">Window</label>
+                    <input type="checkbox" name="checkbox-2" id="checkbox-2" checked>
+                    <label for="checkbox-3" class="blue-orange-text">Exit Row</label>
+                    <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                    <label for="checkbox-4" class="blue-orange-text">Any seat</label>
+                    <input type="checkbox" name="checkbox-4" id="checkbox-4">
+                </div>
+            </div>
+            
+            <div class="ui-widget bottom-paddin">
+                <label class="left-width"></label>
+                <button class="blue-orange-text  ui-button ui-corner-all">
+                    Continue reservation progress
+                    <span class="ui-icon ui-icon-circle-arrow-e"></span>
+                </button>
+            </div>
+
+        </fieldset>
+    </form>
+
+    <script src="form.js"></script>
+</body>
+</html>

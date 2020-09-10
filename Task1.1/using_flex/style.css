@@ -1,0 +1,83 @@
+
+  body {
+    margin: 0;
+    font-size: 18px;
+    font-family: Verdana, "Trebuchet MS", Geneva, sans-serif;
+    font-weight: 200;
+  }
+ 
+  /* Make Text in the middle */
+  header,
+  footer,
+  nav,
+  main,
+  aside {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+  }
+ 
+  header
+   {
+    height: 50px;
+    background-color: #336697;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  footer {
+    height: 50px;
+    background-color: #669900;    
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: calc(100vh - 100px);
+
+  }
+ 
+  .container nav {
+    width: 200px;
+    background-color: orange;
+  }
+  .container aside {
+    width: 200px;
+    background-color: #973968;
+  }
+ 
+  .container main {
+    flex: 1;
+    background-color: white;
+  }
+
+  h5, h4 {
+    padding: 15px;
+    margin: 0;
+}
+
+  p {
+    padding: 0.7rem;
+  }
+
+
+  @media only screen and (max-width: 790px) {
+    .container {
+      display: flex;
+    flex-direction: column;
+    width: 100%;
+      
+
+    }
+
+    .container nav, .container aside {
+      width: 100%;
+    }
+
+
+  }

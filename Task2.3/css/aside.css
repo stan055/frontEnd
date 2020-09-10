@@ -1,0 +1,37 @@
+
+.box {
+    padding: 0 2rem 0 1rem;
+}
+
+img.ui-datepicker-trigger {
+    position: absolute;
+    padding: 0 5px 0 5px;
+    width: 20px;
+}
+
+.bottom-marg {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1477px) {
+    
+    .box {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .box div {
+        padding: .5rem;
+    }
+
+    label[for="to"] {
+        margin-left: 1.2rem;
+    }
+
+    p.anim {
+        margin-left: 2.5rem;
+    }
+
+}
+
+
+

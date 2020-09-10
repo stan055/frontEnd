@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <title>Feedback form</title>
+</head>
+<body>
+    
+    <h1>Feedback form with validation</h1>
+
+    <form class="validate">
+        <input id="name" type="text" name="name" placeholder="Name" class ="required">
+        <br>
+        <input id="email" type="text" name="email" placeholder="E-mail">
+        <br>
+        <textarea id="description" name="description" placeholder="Description" id="" cols="30" rows="10"></textarea>
+        <br>
+        <button id="submit" type="submit" name="submit">Send</button>
+        <br>
+        <div id="form-message"></div>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body id="body">
+    <div>
+        <header class="header">
+            <img class="logo" src="./images/logo.png" alt="logo">
+            <h3>Best bike shop in the world</h3>
+        </header>
+    </div>
+    <div class="general-rows">
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                  </ul>
+            </nav>
+        </div>
+        <div>
+            <main>
+                <h3>Contact Form</h3>
+                    <div class="container">
+                    <form action="/action_page.php">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                    </div>
+            </main>
+        </div>
+        <div>
+            <aside>
+                <div class="box">
+
+                    <div class="bottom-marg">
+                        <label for="brend">Brend</label>
+                        <input id="brend">
+                    </div>   
+
+                    <div>
+                        <label for="from">From</label>
+                        <input type="text" id="from" name="from" class="datepicker">
+                    </div>
+                    <div>
+                        <label for="to">to</label>
+                        <input type="text" id="to" name="to" class="datepicker">
+                    </div>
+             
+                    <p class="anim">Animations:<br>
+                      <select id="anim">
+                        <option value="show">Show</option>
+                        <option value="slideDown">Slide down</option>
+                        <option value="fadeIn">Fade in</option>
+                        <option value="blind">Blind (UI Effect)</option>
+                        <option value="bounce">Bounce (UI Effect)</option>
+                        <option value="clip">Clip (UI Effect)</option>
+                        <option value="drop">Drop (UI Effect)</option>
+                        <option value="fold">Fold (UI Effect)</option>
+                        <option value="slide">Slide (UI Effect)</option>
+                        <option value="">None</option>
+                      </select>
+                    </p>
+                    
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div>
+        <footer>Copyright © 2020 Stan Smith All Rights Reserved</footer>
+    </div>
+
+    <script src="js/autocomplete.js"></script>
+    <script src="js/datepicker.js"></script>
+  </body>
+</html>
+

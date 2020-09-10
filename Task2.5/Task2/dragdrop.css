@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+#photo-grid img {
+  cursor: move;
+  width: 100px;
+}
+
+.trash {
+  padding: 0px 0px;
+  height: 125px;
+  width: 410px;
+  border: 1px solid white;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(37, 37, 37);
+  font-weight: 600;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.trash > img {
+  padding: 43px 0 0 10px;
+
+}
+
+.highlight {
+ border: 1px dashed #b5c051;
+ border-radius: 5px;
+}
+
+.highlight-accept {
+   background: #d9dfa4; 
+}
+
+#anim {
+  background-image: url(images/epuff.png);
+  position: relative;
+  display: block;
+  top: 120px;
+  height: 630px;
+  width: 130px; 
+}

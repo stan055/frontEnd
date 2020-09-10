@@ -1,0 +1,78 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+select:focus,
+input:focus {
+    outline-width: 0px;
+}
+
+small {
+    color: red;
+    margin-left: 5px;
+}
+
+.red-bottom {
+    border-color: #f0f0f0 #f0f0f0 red #f0f0f0 !important;
+}
+
+.green-bottom {
+    border-color: #f0f0f0 #f0f0f0 lightgreen #f0f0f0 !important;
+}
+
+
+.date-picker h3 {
+    text-align: center;
+}
+
+.date-picker div{
+    display: inline;
+    text-align: center;
+} 
+
+.date-picker select {
+    min-width: 50px;
+    margin-right: 5px;
+}
+
+
+.expiration .left{
+    margin-left: 5px;
+}
+
+.expiration input {
+    width: 50px;
+    display: inline;
+    padding: 5;
+}
+
+.expiration input:focus {
+    outline-style: none;
+}
+
+.cvv input {
+    width: 50px;
+    display: inline;
+    margin: 5px;
+}
+
+button.acept {
+    width: 200px;
+    height: 80px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    background-color: #3e5af8;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: 1rem auto;
+
+}

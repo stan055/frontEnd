@@ -1,0 +1,71 @@
+
+.container {
+    margin: 2rem auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+
+.container .header {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 25px 40px 25px 40px;
+}
+
+.form-control {
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    box-sizing: border-box;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form button {
+    background-color: #3e5af8;
+    border: 2px solid #3e5af8;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.fb-login-button {
+    margin-left: calc((100% - 247px) / 2);
+}
+
+.error {
+    border-color: red!important;
+}
+
+#status {
+    padding: .3rem;
+    text-align: center;
+}

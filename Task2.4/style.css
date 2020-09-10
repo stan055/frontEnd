@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&display=swap');
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: #fefbf6;
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+.zero-margin {
+    margin: 0 0 0 0;
+}
+
+.bottom-paddin {
+    padding-bottom: .5rem;
+}
+
+.form h2 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #535552;
+}
+
+.top-border {
+    border: none;
+    border-top: 2px double darkgrey;
+    padding-top: 1rem;
+    padding-right: 5rem;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: max-content max-content;
+}
+
+.left-width {
+    display: inline-block;
+    text-align: end;
+    width: 185px;
+    padding-right: 5px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    color: #555;
+}
+
+input.ui-button.ui-corner-all.blue-orange-text.input-width {
+    width: 10em;
+    background: white!important;
+}
+
+.ui-selectmenu-button.ui-button {
+    width: 10em;
+    padding: .2em 0 .2em .9em;
+}
+
+.ui-selectmenu-text {
+    font-family: 'Mukta', sans-serif;
+    font-size: larger;
+    font-weight: 700;
+    color: #1b84a3;
+}
+
+.blue-orange-text {
+    font-size: medium!important;
+    font-weight: 700!important;
+    color: #1b84a3;
+    background-color: white!important;
+}
+
+.radio-box,
+.control-group {
+    padding-left: 4px;
+}
+
+.ui-visual-focus,
+.ui-button {
+    box-shadow: none!important;
+    margin: 0!important;
+    background: #fbfbfb!important;
+}
+
+.ui-state-active:hover,
+.ui-state-active:active,
+.ui-state-active,
+.blue-orange-text:active,
+.blue-orange-text:hover {
+    border-color: #e59620!important;
+    color: #e59620!important;
+}
+
+.ui-icon-triangle-1-s {
+    background-image: url(ui-icons_bf3030_256x240.png)!important;
+    margin-top: 8px!important;
+}
+
+.ui-icon-circle-arrow-e {
+    background-image: url(ui-icons_bf3030_256x240.png)!important;
+    margin-left: 10px;
+}
+
+button.blue-orange-text.ui-button.ui-corner-all {
+    padding: .4em .4em .4em .9em!important;
+}
+
+
+
