@@ -119,5 +119,5 @@ My Task "bicycle shop": https://bicyclefoxmind.tk/
 
 3.4 OOP
 <br>
-<img src="Screenshots/3.4.PNG" width="500px">
+<img src="Screenshots/3.4.PNG" width="600px">
 <br><br>
