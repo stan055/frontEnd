@@ -116,3 +116,8 @@ My Task "bicycle shop": https://bicyclefoxmind.tk/
 <br>
 <img src="Screenshots/3.3.png" width="600px">
 <br><br>
+
+3.4 OOP
+<br>
+<img src="Screenshots/3.4.png" width="500px">
+<br><br>
