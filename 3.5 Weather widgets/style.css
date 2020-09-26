@@ -1,0 +1,21 @@
+
+body{
+    background-color: #293251;
+}
+
+.widget-weather-five-day-container,
+.widget-weather-current-container {
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.widget-weather-five-day-container > div,
+.widget-weather-current-container > div {
+    padding: 15px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+
+
