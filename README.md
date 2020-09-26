@@ -124,5 +124,5 @@ My Task "bicycle shop": https://bicyclefoxmind.tk/
 
 3.5 Weather
 <br>
-<img src="Screenshots/3.5.PNG" width="550px">
+<img src="Screenshots/3.5.PNG" width="600px">
 <br><br>
