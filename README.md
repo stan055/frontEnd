@@ -122,7 +122,7 @@ My Task "bicycle shop": https://bicyclefoxmind.tk/
 <img src="Screenshots/3.4.PNG" width="600px">
 <br><br>
 
-3.5 Weather
+3.5 Weather with API OpenWeather
 <br>
 <img src="Screenshots/3.5.PNG" width="600px">
 <br><br>
