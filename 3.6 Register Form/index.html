@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="create-account">
+            <form>
+                <h1>Create An Account</h1>
+                <section class="one">
+                    <p>
+                        <label for="name">
+                            <span>Username </span>
+                        </label>
+                        <input type="text" id="name" name="username" validate="isNotEmpty">
+                        <small></small>
+                    </p>
+                    <p>
+                        <label for="pwd">
+                            <span>Password </span>
+                        </label>
+                        <input type="password" id="pwd" name="password" validate="isNotEmpty">
+                        <small></small>
+                    </p>
+                    <p>
+                        <label for="pwdConfirm">
+                            <span>Password (confirm) </span>
+                        </label>
+                        <input type="password" id="pwdConfirm" name="passwordConfirm" validate="confirmPassword">
+                        <small></small>
+                    </p>
+                    <p>
+                        <label for="mail">
+                            <span>Email Adress </span>
+                        </label>
+                        <input type="email" id="mail" name="usermail" validate="email">
+                        <small></small>
+                    </p>
+                </section>
+                <section>
+                    <fieldset>
+                        <legend>Preferred Lodgings</legend>
+                        <ul class="no-bullets">
+                          <li>
+                            <input type="checkbox" id="fire" value="Fire cabins">
+                            <label for="fire">Fire Cabins</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="horseshoe" value="Horseshoe Cabins">
+                            <label for="horseshoe">Horseshoe Cabins</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="spruce" value="Spruce Cabins">
+                            <label for="spruce">Spruce Cabins</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="ursa" value="Ursa Major Cabins">
+                            <label for="ursa">Ursa Major Cabins</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="bear" value="Bear Meadow Campground">
+                            <label for="bear">Bear Meadow Campground</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="lakeside" value="Lakeside Campground">
+                            <label for="lakeside">Lakeside Campground</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="leadfood" value="Leadfood Campground">
+                            <label for="leadfood">Leadfood Campground</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="talus" value="Talus Campground">
+                            <label for="talus">Talus Campground</label>
+                          </li>
+                        </ul>
+                      </fieldset>
+                </section>
+                <p> <button type="submit">Create Account</button> </p>
+            </form>
+        </div>
+        <div class="profile">
+            <h2>Profile</h2>
+        </div>
+    </div>
+
+    <script src="validate.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

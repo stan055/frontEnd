@@ -126,3 +126,8 @@ My Task "bicycle shop": https://bicyclefoxmind.tk/
 <br>
 <img src="Screenshots/3.5.PNG" width="600px">
 <br><br>
+
+3.6 Register Form
+<br>
+<img src="Screenshots/3.6.PNG" width="600px">
+<br><br>
