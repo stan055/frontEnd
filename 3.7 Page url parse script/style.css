@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+body{
+    background-color: #293251;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.container form {
+    width: 350px;
+}
+
+form h1 {
+    font-weight: 600;
+}
+
+form .tab-btn {
+    background-color: rgb(170, 170, 170);
+    color: rgb(206, 206, 206);
+    padding: 9px 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+form .tab-btn.active {
+    background-color: rgb(121, 121, 121);
+    outline: 2px solid rgb(59, 59, 59);
+    outline-offset: -2px;
+    color: rgb(255, 222, 0);
+
+}
+
+.your-info p {
+    margin: 6px ;
+}
+
+.your-info p label {
+    display: inline-block;
+    text-align: right;
+    width: 90px;
+}
+
+.your-info p input {
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 3px;
+}
+
+.your-pref button,
+.your-info button {
+    color: rgb(255, 222, 0);
+    background: rgb(41,34,23);
+    background: linear-gradient(0deg, rgb(194, 176, 143) 0%, rgba(232,232,232,1) 95%);
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 5px 22px;
+}
+
+.your-pref textarea {
+    margin: 10px 0 0 70px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    resize: none;
+}
+
+.your-pref input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin: 6px 0 0 50px;
+    position: relative;
+    top: 4px;
+    background: rgb(41,34,23);
+    background: linear-gradient(0deg, rgb(207, 207, 207) 0%, rgb(255, 255, 255) 95%);
+    border: 2px solid rgb(121, 121, 121);
+}
+
+.your-pref input:checked {
+    border: 5px solid black;
+}
+
+.your-pref label {
+    color: rgb(68, 68, 68);
+    font-weight: 600;
+}
+
+.container .data {
+    min-height: 200px;
+    min-width: 250px;
+    background-color: rgb(207, 206, 206);
+    padding:  0 1rem 1rem 1rem;
+    margin: 1rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

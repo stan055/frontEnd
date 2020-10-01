@@ -131,3 +131,8 @@ My Task "bicycle shop": https://bicyclefoxmind.tk/
 <br>
 <img src="Screenshots/3.6.PNG" width="600px">
 <br><br>
+
+3.7 Current page url parse (window.location.search)
+<br>
+<img src="Screenshots/3.7.PNG" width="600px">
+<br><br>
