@@ -1,0 +1,45 @@
+
+body{
+    background-color: #293251;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 100px;
+    background-color: rgb(27, 25, 24);
+    width: 550px;
+    height: 400px;
+    overflow-y: scroll;
+    font-weight: 500;
+    font-size: large;
+    color: white;
+    
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+  }
+
+.header {
+    padding: 5px 16px;
+    height: px;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.container p {
+    padding: .5rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 107px;
+    width: 518px;
+}
+
+.sticky + p {
+    padding-top: 102px;
+}

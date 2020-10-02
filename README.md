@@ -136,3 +136,8 @@ My Task "bicycle shop": https://bicyclefoxmind.tk/
 <br>
 <img src="Screenshots/3.7.PNG" width="600px">
 <br><br>
+
+3.8 Stycky headers
+<br>
+<img src="Screenshots/3.8.PNG" width="600px">
+<br><br>

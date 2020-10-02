@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <section>
+            <div class="header" name="first" style="background-color: rgb(253, 92, 51);">
+                <h3>First headline</h3>
+            </div>
+            <p style="color: rgb(133, 177, 46);">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Mollitia qui numquam magni porro exercitationem saepe fuga voluptas
+                repudiandae veniam? Dolores facere sed exercitationem? <br><br>
+                Saepe omnis deleniti laudantium, illo consectetur quidem dolores,<br><br>
+                quasi aliquam nesciunt ut dolor? Dolores omnis asperiores iusto ipsam,
+            </p>
+        </section>
+        <section>
+            <div class="header" name="second" style="background-color: rgb(252, 180, 48);">
+                <h3>Second headline</h3>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio non, exercitationem dolorem fuga
+                natus blanditiis soluta dolore ipsum ipsam porro cum minus! Veniam, suscipit voluptatem quam rem tempora
+                quos dolore molestias inventore ut dolorum quaerat natus deleniti. Enim, provident impedit!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio non, exercitationem dolorem fuga
+                natus blanditiis soluta dolore ipsum ipsam porro cum minus! Veniam, suscipit voluptatem quam rem tempora
+                quos dolore molestias inventore ut dolorum quaerat natus deleniti. Enim, provident impedit!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio non, exercitationem dolorem fuga
+                natus blanditiis soluta dolore ipsum ipsam porro cum minus! Veniam, suscipit voluptatem quam rem tempora
+                quos dolore molestias inventore ut dolorum quaerat natus deleniti. Enim, provident impedit!
+            </p>
+        </section>
+        <section>
+            <div class="header" name="third" style="background-color: rgb(98, 167, 42)">
+                <h3>Third headline</h3>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio non, exercitationem dolorem fuga
+                natus blanditiis soluta dolore ipsum ipsam porro cum minus! Veniam, suscipit voluptatem quam rem tempora
+                quos dolore molestias inventore ut dolorum quaerat natus deleniti. Enim, provident impedit!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio non, exercitationem dolorem fuga
+                natus blanditiis soluta dolore ipsum ipsam porro cum minus! Veniam, suscipit voluptatem quam rem tempora
+                quos dolore molestias inventore ut dolorum quaerat natus deleniti. Enim, provident impedit!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio non, exercitationem dolorem fuga
+                natus blanditiis soluta dolore ipsum ipsam porro cum minus! Veniam, suscipit voluptatem quam rem tempora
+                quos dolore molestias inventore ut dolorum quaerat natus deleniti. Enim, provident impedit!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio non, exercitationem dolorem fuga
+                natus blanditiis soluta dolore ipsum ipsam porro cum minus! Veniam, suscipit voluptatem quam rem tempora
+                quos dolore molestias inventore ut dolorum quaerat natus deleniti. Enim, provident impedit!
+            </p>
+        </section>
+        <section>
+            <div class="header" name="fourth" style="background-color: rgb(67, 3, 128)">
+                <h3>Fourth headline</h3>
+            </div>
+        </section>
+    </div>
+
+    <script>
+
+        let container = document.querySelector('.container')
+        let headers = document.querySelectorAll(".header");
+
+        container.onscroll = function () { myFunction() }
+        headers.forEach(h => h.sticky = h.offsetTop - 110)
+
+        function myFunction() {
+            headers.forEach(h => {
+                if (container.scrollTop > h.sticky) {
+                    h.classList.add("sticky");
+                } else {
+                    h.classList.remove("sticky");
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
