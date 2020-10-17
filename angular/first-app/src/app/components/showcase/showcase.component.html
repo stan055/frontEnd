@@ -1,0 +1,12 @@
+            
+<div class="row">
+
+    <main>
+        <app-carousel></app-carousel>
+        <app-title-card [discount]="70"></app-title-card>
+        <app-homecard *ngFor="let card of cardsFirstLine;" [itemData]="card" [discount]="60"></app-homecard> 
+        <app-homecard *ngFor="let card of cardsOther;" [itemData]="card" [discount]="50"></app-homecard>
+    </main>
+
+</div>
+
